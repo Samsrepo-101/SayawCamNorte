@@ -87,7 +87,7 @@ export const DANCES = [
         female: "Maria Clara gown",
         male: "Barong Tagalog with black pants",
       },
-      accessories: ["Buri hat"],
+      accessories: [""],
       footwearFemale: "Sapatilla",
       footwearMale: "Black shoes",
       musicalCharacter: {
@@ -297,11 +297,6 @@ export const DANCES = [
         name: "ENGAÑO WITH A WALTZ",
         description: "A combination step involving a side-step and a waltz step, performed with a forearm turn in reverse T-position.",
         video: "/vid/egano w_ a waltz.MOV"
-      },
-      {
-        name: "WALTZ STEP (FORWARD)",
-        description: "Two waltz steps used to pass the partner via the left-to-left shoulder.",
-        video: "/vid/waltz turn.MOV"
       },
       {
         name: "WALTZ TURN",
@@ -654,11 +649,6 @@ export const DANCES = [
         video: "/vid/bagging.MOV"
       },
       {
-        name: "TRANSITION TO STANDING",
-        description: "Executing the final repetition of the sequence while moving from a squatting to a standing position.",
-        video: "/vid/walking step.MOV"
-      },
-      {
         name: "REVEALING THE FIND",
         description: "Picking up an imaginary nugget and showing it to a partner with a joyful expression (as if saying 'Really found gold!').",
         video: "/vid/revealing the find.MOV"
@@ -667,11 +657,6 @@ export const DANCES = [
         name: "PARTNER INTERACTION",
         description: "Facing each other while performing the found gold sequence.",
         video: "/vid/partner interaction.MOV"
-      },
-      {
-        name: "PAUSE",
-        description: "A specific lateral or circular shaking motion of the pan used to separate earth and sand from impurities, similar to winnowing rice.",
-        video: "/vid/winnowing.MOV"
       },
     ],
     contact: {
