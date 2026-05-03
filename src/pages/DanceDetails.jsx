@@ -848,11 +848,11 @@ export default function DanceDetail() {
                 <div className="w-full h-full relative flex items-center justify-center" key={activeStep.video}>
                   <video
                     src={activeStep.video}
-                    controls
                     autoPlay
                     muted
                     loop
-                    className="w-full h-full object-contain"
+                    playsInline
+                    className="w-full h-full object-contain pointer-events-none"
                     onError={(e) => {
                       const container = e.currentTarget.parentElement;
                       if (container) {
