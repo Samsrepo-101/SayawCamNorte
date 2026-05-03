@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link, Navigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Play, MapPin, User, BookOpen, Users, Music, Shirt, Footprints, ImageIcon, Eye, Video, FileAudio, ShoppingCart, X, MessageSquare, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, Play, MapPin, User, BookOpen, Users, Music, Shirt, Footprints, ImageIcon, Eye, Video, FileAudio, ShoppingCart, X, MessageSquare, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { getDanceBySlug, DANCES, DANCE_SUBTABS } from "@/lib/dances";
 
 export default function DanceDetail() {
@@ -36,6 +36,38 @@ export default function DanceDetail() {
       setCurrentNotePieceIndex((prev) => (prev - 1 + dance.musicSheetImage.length) % dance.musicSheetImage.length);
     }
   };
+
+  const handleNextStep = (e) => {
+    e?.stopPropagation();
+    const videoSteps = dance.steps.filter(s => !s.isNote && s.video);
+    const currentIndex = videoSteps.findIndex(s => s.name === activeStep?.name);
+    if (currentIndex !== -1) {
+      const nextIndex = (currentIndex + 1) % videoSteps.length;
+      setActiveStep(videoSteps[nextIndex]);
+    }
+  };
+
+  const handlePrevStep = (e) => {
+    e?.stopPropagation();
+    const videoSteps = dance.steps.filter(s => !s.isNote && s.video);
+    const currentIndex = videoSteps.findIndex(s => s.name === activeStep?.name);
+    if (currentIndex !== -1) {
+      const prevIndex = (currentIndex - 1 + videoSteps.length) % videoSteps.length;
+      setActiveStep(videoSteps[prevIndex]);
+    }
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!isStepModalOpen) return;
+      if (e.key === "ArrowRight") handleNextStep();
+      if (e.key === "ArrowLeft") handlePrevStep();
+      if (e.key === "Escape") setIsStepModalOpen(false);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isStepModalOpen, activeStep]);
 
   const TAB_ICONS = {
     "overview": Eye,
@@ -143,8 +175,8 @@ export default function DanceDetail() {
                   key={tab.id}
                   onClick={() => scrollToSection(tab.id)}
                   className={`flex items-center gap-1 px-3 py-1.5 text-[10px] font-sans font-medium uppercase tracking-[0.12em] rounded transition-all whitespace-nowrap ${isActive
-                      ? "bg-primary text-primary-foreground shadow-sm"
-                      : "text-foreground/70 hover:text-primary hover:bg-primary/5"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "text-foreground/70 hover:text-primary hover:bg-primary/5"
                     }`}
                 >
                   {Icon && <Icon className={`w-3 h-3 ${isActive ? 'text-primary-foreground' : 'text-accent'}`} />}
@@ -477,17 +509,6 @@ export default function DanceDetail() {
                     setIsStepModalOpen(true);
                   }
                 }}
-                onMouseEnter={(e) => {
-                  const video = e.currentTarget.querySelector('video');
-                  if (video) video.play();
-                }}
-                onMouseLeave={(e) => {
-                  const video = e.currentTarget.querySelector('video');
-                  if (video) {
-                    video.pause();
-                    video.currentTime = 0;
-                  }
-                }}
               >
                 {!step.isNote ? (
                   <>
@@ -495,11 +516,16 @@ export default function DanceDetail() {
                     <div className="relative aspect-video md:aspect-auto bg-secondary/50 flex flex-col items-center justify-center gap-3 border-b md:border-b-0 md:border-r border-border min-h-[220px] overflow-hidden">
                       {step.video ? (
                         <>
-                          <video
-                            src={step.video}
+                          <img
+                            src={step.thumbnail || (step.video.includes('id=') ? `https://lh3.googleusercontent.com/d/${step.video.split('id=')[1].split('&')[0]}=w1000` : step.video)}
+                            alt={step.name}
                             className="w-full h-full object-cover transition-transform duration-700 group-hover/step:scale-105"
-                            muted
-                            playsInline
+                            onError={(e) => {
+                              if (!e.currentTarget.dataset.retried && step.video.includes('id=')) {
+                                e.currentTarget.dataset.retried = "true";
+                                e.currentTarget.src = `https://drive.google.com/thumbnail?id=${step.video.split('id=')[1].split('&')[0]}&sz=w1000`;
+                              }
+                            }}
                           />
                           <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover/step:opacity-100 transition-opacity flex items-center justify-center">
                             <div className="w-16 h-16 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-2xl transform scale-75 group-hover/step:scale-100 transition-transform duration-500">
@@ -622,8 +648,8 @@ export default function DanceDetail() {
               {/* Person Picture Side */}
               <div className="md:col-span-5 relative min-h-[350px] overflow-hidden">
                 <img
-                  src={dance.contact?.picture || dance.image}
-                  alt={dance.contact?.name}
+                  src={dance.image}
+                  alt={dance.name}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-background/0 to-background" />
@@ -645,9 +671,16 @@ export default function DanceDetail() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
-                  <div className="flex flex-col">
-                    <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1 font-sans">Coordinated by</p>
-                    <p className="font-serif text-2xl text-foreground">{dance.contact?.name || "Dr. Arnel P. Plantado"}</p>
+                  <div className="flex items-center gap-5">
+                    <img 
+                      src={dance.contact?.picture || "/sirPlantado.jpg"} 
+                      alt={dance.contact?.name || "Dr. Arnel P. Plantado"} 
+                      className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shadow-md border-2 border-primary/10"
+                    />
+                    <div className="flex flex-col">
+                      <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1 font-sans">Coordinated by</p>
+                      <p className="font-serif text-2xl md:text-3xl text-foreground">{dance.contact?.name || "Dr. Arnel P. Plantado"}</p>
+                    </div>
                   </div>
 
                   <div className="h-px w-full sm:w-px sm:h-12 bg-border" />
@@ -795,14 +828,40 @@ export default function DanceDetail() {
             </button>
 
             {/* Video Side */}
-            <div className="md:w-[65%] bg-black flex items-center justify-center">
-              <video
-                src={activeStep.video}
-                controls
-                autoPlay
-                muted
-                className="w-full h-full object-contain"
-              />
+            <div className="md:w-[65%] bg-black flex items-center justify-center relative group">
+                {/* Navigation Arrows */}
+                <button 
+                  onClick={handlePrevStep}
+                  className="absolute left-4 z-20 w-12 h-12 bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-sm opacity-100 md:opacity-0 group-hover:opacity-100 hover:bg-black/60 transition-all"
+                  aria-label="Previous step"
+                >
+                  <ChevronLeft className="w-8 h-8" />
+                </button>
+                <button 
+                  onClick={handleNextStep}
+                  className="absolute right-4 z-20 w-12 h-12 bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-sm opacity-100 md:opacity-0 group-hover:opacity-100 hover:bg-black/60 transition-all"
+                  aria-label="Next step"
+                >
+                  <ChevronRight className="w-8 h-8" />
+                </button>
+
+                <div className="w-full h-full relative flex items-center justify-center" key={activeStep.video}>
+                  <video
+                    src={activeStep.video}
+                    controls
+                    autoPlay
+                    muted
+                    loop
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                      const container = e.currentTarget.parentElement;
+                      if (container) {
+                        const id = activeStep.video.split('id=')[1]?.split('&')[0];
+                        container.innerHTML = `<iframe src="https://drive.google.com/file/d/${id}/preview?mute=1" class="w-full h-full border-0" allow="autoplay" allowFullScreen></iframe>`;
+                      }
+                    }}
+                  />
+                </div>
             </div>
 
             {/* Info Side */}

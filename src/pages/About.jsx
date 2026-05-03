@@ -23,7 +23,7 @@ export default function About() {
               name="Brutas, Mark Theolo O."
               course="Bachelor of Physical Education"
               school="Camarines State College - Abaño Campus"
-              social={{ icon: ExternalLink, url: "#", label: "Profile" }}
+              social={{ icon: ExternalLink, url: "https://www.facebook.com/mark.theolo.brutas", label: "Contact" }}
               image="/tyolo.jpg"
               color="bg-primary/5"
             />
@@ -31,8 +31,8 @@ export default function About() {
               name="España, Kiezzha Anne T."
               course="Bachelor of Physical Education"
               school="Camarines State College - Abaño Campus"
-              social={{ icon: Globe, url: "#", label: "Website" }}
-              image="/tyolo.jpg"
+              social={{ icon: ExternalLink, url: "https://www.facebook.com/KiezzhaAnne", label: "Contact" }}
+              image="/kiezzha.jpg"
               color="bg-accent/5"
             />
             <ResearcherCard 
@@ -41,8 +41,8 @@ export default function About() {
               description=""
               course="Bachelor of Physical Education"
               school="Camarines State College - Abaño Campus"
-              social={{ icon: Mail, url: "#", label: "Contact" }}
-              image="/tyolo.jpg"
+              social={{ icon: ExternalLink, url: "https://www.facebook.com/joanamae.labrador.5", label: "Contact" }}
+              image="/joana.jpg"
               color="bg-primary/5"
             />
           </div>

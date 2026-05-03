@@ -44,7 +44,7 @@ export default function Footer() {
 
         <div className="pt-10 border-t border-primary-foreground/15 flex flex-col md:flex-row justify-between gap-4 text-xs uppercase tracking-[0.2em] text-primary-foreground/50">
           <p>© {new Date().getFullYear()} Sayaw Cam Norteño — A Thesis in Heritage</p>
-          <p>Camarines Norte, Philippines</p>
+          <p>Website developed by Samantha Balon</p>
         </div>
       </div>
     </footer>

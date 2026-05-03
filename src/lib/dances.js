@@ -1,7 +1,7 @@
 // Data sourced from:
-// 1. "Baile De Camnorteños: Preservation of Cultural Heritage of Published Traditional Folk Dances" (Bautista & Bardon).
-// 2. "Sayaw Cam Norteño: A Web-Based Platform..." (Brutas, España, Labrador, 2026).
-// Source book: Camarines Norte Folk Dances — An Instructional Materials for Teachers (Dr. Arnel P. Plantado).
+// 1. "Baile De CamnorteÃ±os: Preservation of Cultural Heritage of Published Traditional Folk Dances" (Bautista & Bardon).
+// 2. "Sayaw Cam NorteÃ±o: A Web-Based Platform..." (Brutas, EspaÃ±a, Labrador, 2026).
+// Source book: Camarines Norte Folk Dances â€” An Instructional Materials for Teachers (Dr. Arnel P. Plantado).
 
 export const DANCE_SUBTABS = [
   { id: "overview", label: "Overview" },
@@ -71,7 +71,7 @@ export const DANCES = [
         title: "WHOLE DANCE",
         subtitle: "Music A & B",
         content: [
-          "Repeat the whole Dance – figure I, II, III, IV-V...........................................................80M "
+          "Repeat the whole Dance - figure I, II, III, IV-V...........................................................80M "
         ]
       },
       {
@@ -102,17 +102,20 @@ export const DANCES = [
         {
           name: "Cross step",
           description: "Step R (L) foot on second position (ct. 1), step or slide L (R) foot sideward right (left) across the R(L) in front (cts.2,3). Put the weigh on the L(R) foot at end of the slide in the third count. This is done in series, moving to one direction, to sideward right or left.",
-          video: "/vid/cross step.MOV"
+          video: "https://drive.google.com/uc?export=download&id=1EGEBZP3_lFBDQc2t5wUxBv_3FWT4dIHV",
+        thumbnail: "/thumbnails/1EGEBZP3_lFBDQc2t5wUxBv_3FWT4dIHV.jpg"
         },
         {
           name: "DO-SI-DO- (Dos-A Dos)",
           description: "The vis-à-vis (opposite) both a advance forward, pass each other's right ( or left) more backward without turning around pass each other's left (or right) side to proper places. This is foreign origin and is used in many Philippine dances.",
-          video: "/vid/dosido.MOV"
+          video: "https://drive.google.com/uc?export=download&id=1yyQglHeKpiqdL1tdUep-2GJG7gcf7Bks",
+        thumbnail: "/thumbnails/1yyQglHeKpiqdL1tdUep-2GJG7gcf7Bks.jpg"
         },
         {
           name: "MAZURKA",
           description: "Slide (L) foot in second (ct. 1), cut R (L) sideward with the L (R) foot (ct. 2), hop on the L (R) foot and of the L (R) foot (ct. 3). This step may be executed forward, obliquely forward, sideward or going around also with one foot leading.",
-          video: "/vid/mazurka.MOV"
+          video: "https://drive.google.com/uc?export=download&id=10wlLKfwOqF90tfSyE_Bb6fQTFx4V0IJW",
+        thumbnail: "/thumbnails/10wlLKfwOqF90tfSyE_Bb6fQTFx4V0IJW.jpg"
         },
         {
           name: "Note",
@@ -122,30 +125,33 @@ export const DANCES = [
         {
           name: "WALKING STEP",
           description: "Step R (L) foot forward (ct. 1), step L(R) foot (ct. 2).",
-          video: "/vid/walking step.MOV"
+          video: "https://drive.google.com/uc?export=download&id=1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ",
+        thumbnail: "/thumbnails/1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ.jpg"
         },
         {
           name: "SWAY BALANCE WITH A RAISE",
           description: "a. Step R (L) foot obliquely forward right (left) (cts. 1, 2), step L(R) across the R (L) foot in front ct. 3 .............................. 1M\n\nb. Step R (L) foot obliquely backward right (left) (ct. 1), raise L(R) Knee in front (cts. 2,3) Bend body slightly forward on ct. 1, and raise gradually upward to original position as (cts. 2,3). Open arms sideward at shoulder level on the first then counts (cts. 1,2,3), bend forearms forward and bring hands close to chest on the next three counts (cts. 1,2,3), or arms in fourth position R (L) arm high. If desired, forearm turns may be done on the second measure.",
-          video: "/vid/sway balance w_ raise.MOV"
+          video: "https://drive.google.com/uc?export=download&id=1yVcrxuolQejqcOiopcVlQ-oQUADpg7nc",
+        thumbnail: "/thumbnails/1yVcrxuolQejqcOiopcVlQ-oQUADpg7nc.jpg"
         },
         {
           name: "WALTZ TURN",
           description: "Same step as in waltz step but turning in place or moving.",
-          video: "/vid/waltz turn.MOV"
+          video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+        thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
         },
       ],
       contact: {
         name: "Dr. Arnel P. Plantado",
         facebook: "https://www.facebook.com/arnel.plantado",
-        description: "Author of 'Camarines Norte Folk Dances' and lead researcher for the preservation of local dance traditions. Contact for full performance footage and instructional inquiries.",
-        picture: "/jota camarines.png" // Using dance image as placeholder for person picture
+        description: "For the complete performance footage and high-quality archival videos of this dance, please coordinate with our official cultural documentation partner.",
+        picture: "/sirPlantado.jpg"
       }
     },
   {
     slug: "pantomina-de-camarines",
     name: "Pantomina De Camarines",
-    tagline: "The wedding dance — a promise set to music.",
+    tagline: "The wedding dance - a promise set to music.",
     classification: "Wedding Dance",
     origin: "Daet, Camarines Norte",
     culture: "Lowland Christian",
@@ -157,7 +163,7 @@ export const DANCES = [
     audio: "/pantominaMusic.wav",
     accent: "from-[#7a2a3a] to-[#a8505e]",
     description:
-      "Pantomina De Camarines is a popular dance being performed by the newlywed couple to gather some amount of money for them to start a new life as husband and wife. Relatives of the groom pin pesos bills on the bride’s groom, and the relatives of the bride do the same as counterpart. God parents are also obliged to do the pinning. Visitors and guests can participate by showering coins in order that dancing became merrier and more alive. ",
+      "Pantomina De Camarines is a popular dance being performed by the newlywed couple to gather some amount of money for them to start a new life as husband and wife. Relatives of the groom pin pesos bills on the bride's groom, and the relatives of the bride do the same as counterpart. God parents are also obliged to do the pinning. Visitors and guests can participate by showering coins in order that dancing became merrier and more alive. ",
     story:
       "Although some of the dance steps are common, the pantomina in the Bicol Region has slight variation on the hand movement. For example the dance steps may move to particular customs and beliefs of certain groups of people just like in Camarines Norte.",
     literature: [
@@ -192,7 +198,7 @@ export const DANCES = [
         content: [
           "Partners face each other",
           "a) Take one engaño with a waltz steps to the right (cts. 1,2,3; 1,2,3)arms in reverse T position with forearm turn, hands are loosely closed ................ 2M",
-          "b) Repeat (a) – going to the left. (cts. 1,2,3;1,2,3) .............................................. 2M",
+          "b) Repeat (a) - going to the left. (cts. 1,2,3;1,2,3) .............................................. 2M",
           "c) Repeat (a) and (b) four times more right and Left alternately ................ 8M",
           "d) Take two waltz steps forward to partners place (cts. 1,2,3;1,2,3) passing L to L shoulder. Arms at lateral position with forearm, turn ............................ 2M",
           "e) Execute two moderate waltz turn in place to face partner (cts. 1,2,3;1,2,3) same arm movements as (d) ........................................................................ 2M",
@@ -245,7 +251,7 @@ export const DANCES = [
         subtitle: "Music A, B, C, and D",
         content: [
           "Repeat the whole dance (figures I, II, III IV, & V). ",
-          "Note: In figure IV – repeat (a -d) 16M only"
+          "Note: In figure IV - repeat (a -d) 16M only"
         ]
       },
       {
@@ -276,74 +282,87 @@ export const DANCES = [
       {
         name: "RUNNING STEP",
         description: "Used in the Introduction to meet at the center (8 steps).",
-        video: "/vid/running step.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1aR6rZum1w6XaFlQOV2KHCSK658m8ZpK8",
+        thumbnail: "/thumbnails/1aR6rZum1w6XaFlQOV2KHCSK658m8ZpK8.jpg"
       },
       {
         name: "WALKING STEP",
         description: "Partners take four steps forward and backward while manipulating the skirt or placing hands at the waist.",
-        video: "/vid/walking step.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ",
+        thumbnail: "/thumbnails/1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ.jpg"
       },
       {
         name: "CHANGE STEP",
         description: "Executed alternately (R and L) while moving forward or in place (counts: 1, and, 2).",
-        video: "/vid/change step.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1amJEJaX4VosePEs1AQGpxO12_fEMUcAu",
+        thumbnail: "/thumbnails/1amJEJaX4VosePEs1AQGpxO12_fEMUcAu.jpg"
       },
       {
         name: "CLOCKWISE CIRCLE",
-        description: "Partners move toward each other, pause, then retreat — symbolizing the approach and blessing of marriage.",
-        video: "/vid/clockwise circle.MOV"
+        description: "Partners move toward each other, pause, then retreat - symbolizing the approach and blessing of marriage.",
+        video: "https://drive.google.com/uc?export=download&id=17JZZTpzHhxtuTMMNLzFrc5N9-HCBBXif",
+        thumbnail: "/thumbnails/17JZZTpzHhxtuTMMNLzFrc5N9-HCBBXif.jpg"
       },
       {
         name: "ENGAÑO WITH A WALTZ",
         description: "A combination step involving a side-step and a waltz step, performed with a forearm turn in reverse T-position.",
-        video: "/vid/egano w_ a waltz.MOV"
+        video: "https://drive.google.com/uc?export=download&id=16x4ErkA4LvNmP4HeA8AulmdhNJxE140x",
+        thumbnail: "/thumbnails/16x4ErkA4LvNmP4HeA8AulmdhNJxE140x.jpg"
       },
       {
         name: "WALTZ TURN",
         description: "Moderate turns executed in place to face the partner after passing.",
-        video: "/vid/waltz turn.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+        thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
       },
       {
         name: "LATERAL ARMS",
         description: "Arms held to one side (shoulder/waist level) during the waltz transitions.",
-        video: "/vid/arms in lateral position.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1wmzsqeWQJ2Jaej-gQGXCXcJfsF2HhL3B",
+        thumbnail: "/thumbnails/1wmzsqeWQJ2Jaej-gQGXCXcJfsF2HhL3B.jpg"
       },
       {
         name: "STEP-SWING STEP",
         description: "A rhythmic step where one foot steps and the other swings across; used to meet at the center and move forward while joined.",
-        video: "/vid/step swing.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1JT_hA4NiVd4Sswu2qH84n7iHnqAKBSaT",
+        thumbnail: "/thumbnails/1JT_hA4NiVd4Sswu2qH84n7iHnqAKBSaT.jpg"
       },
       {
         name: "SWING TURN",
         description: "A six-step sequence used to turn left while maintaining the step-swing rhythm.",
-        video: "/vid/swing turn.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1d4AvFsbrSKvH5LNOxhfBdHNaNmzzGzD2",
+        thumbnail: "/thumbnails/1d4AvFsbrSKvH5LNOxhfBdHNaNmzzGzD2.jpg"
       },
       {
         name: "KNEELING",
         description: "A graceful drop to one knee (R or L) used specifically by the Boy while following or pleading.",
-        video: "/vid/kneeling.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1Sn2z2hluqK45er9VnjDEeYWR518V3Len",
+        thumbnail: "/thumbnails/1Sn2z2hluqK45er9VnjDEeYWR518V3Len.jpg"
       },
       {
         name: "LEAP STEP",
         description: "A light, springing step used by the Girl to evade the Boy at the corners of the diamond.",
-        video: "/vid/leap step.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1DvXeGMjBdSEvexmTmsJKPv2Ma5lwpEd5",
+        thumbnail: "/thumbnails/1DvXeGMjBdSEvexmTmsJKPv2Ma5lwpEd5.jpg"
       },
       {
         name: "SALOK",
         description: "A scooping arm movement where the Boy bends toward the Girl's ankle with the L hand.",
-        video: "/vid/salok.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1SzeT3SXoh1RQp3Ow3WOhV2RLDBxqZIog",
+        thumbnail: "/thumbnails/1SzeT3SXoh1RQp3Ow3WOhV2RLDBxqZIog.jpg"
       },
       {
         name: "ARCH TURN",
         description: "The Girl executes a final turn under the arch created by the Boy's arm.",
-        video: "/vid/arch turn.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1qNcACv-5bMHuuVtAJMVvN4X_iD790kDc",
+        thumbnail: "/thumbnails/1qNcACv-5bMHuuVtAJMVvN4X_iD790kDc.jpg"
       },
     ],
     contact: {
       name: "Dr. Arnel P. Plantado",
       facebook: "https://www.facebook.com/arnel.plantado",
-      description: "Lead researcher for Pantomina De Camarines documentation. Reach out for complete wedding dance performance guidelines and regional variations.",
-      picture: "https://media.base44.com/images/public/69e1d16049c5d21cd426e575/cf7d9bddd_generated_106b6d77.png"
+      description: "For the complete performance footage and high-quality archival videos of this dance, please coordinate with our official cultural documentation partner.",
+      picture: "/sirPlantado.jpg"
     }
   },
   {
@@ -391,7 +410,7 @@ export const DANCES = [
           "The boy is still seated. Girl takes off hat and holds it in her right hand.",
           "a) Takes one waltz step sideward R and one waltz step sideward L, arms in lateral position shoulder level moving sideward right and left ............................................2M",
           "b) Takes one waltz-turn right moving forward. Arms as in (a) ............................................2M",
-          "c) Repeats (a) and (b) three times more moving around the chair counter clockwise. Finishes in front near chair and on the last measure puts hat on boy’s head ........................................2M"
+          "c) Repeats (a) and (b) three times more moving around the chair counter clockwise. Finishes in front near chair and on the last measure puts hat on boy's head ........................................2M"
         ]
       },
       {
@@ -410,7 +429,7 @@ export const DANCES = [
         subtitle: "Music A",
         content: [
           "Boy takes off the hat and holds it in the right hand. Uses it for fanning as if feeling warm",
-          "Girl takes the handkerchief from boy’s pocket and dries forehead and neck, going from right to left side of the chair .............................16M",
+          "Girl takes the handkerchief from boy's pocket and dries forehead and neck, going from right to left side of the chair .............................16M",
           "All these motions should be done rhythmically"
         ]
       },
@@ -418,7 +437,7 @@ export const DANCES = [
         title: "Figure VI",
         subtitle: "Music B",
         content: [
-          "a) Girl takes a comb from the boy’s pocket and goes through the motion of combing and parting his hair. She waltzes right to left of the chair. Once in a while she dances away to better view her work .......14M",
+          "a) Girl takes a comb from the boy's pocket and goes through the motion of combing and parting his hair. She waltzes right to left of the chair. Once in a while she dances away to better view her work .......14M",
           "Boy shows expression of satisfaction. He holds his head still while the girl combs his hair. ",
           "b) Boy stands up (last 2 M) and puts on the hat. Girl sit down on the chair .........2M"
         ]
@@ -465,39 +484,45 @@ export const DANCES = [
     steps: [
       {
         name: "CHASING STEP",
-        description: "Step R(L) forward, (ct.1), step L® close to R(L) in third in rear or first position (ct. and) this step as executed, with one foot leading in all directions. The steps are small. There are two chasing steps in a measure.",
-        video: "/vid/chasing step.MOV"
+        description: "Step R(L) forward, (ct.1), step L close to R(L) in third in rear or first position (ct. and) this step as executed, with one foot leading in all directions. The steps are small. There are two chasing steps in a measure.",
+        video: "https://drive.google.com/uc?export=download&id=1zwhuM5bHW2ZUv4NMfYdOtQiBEwCLiBC6",
+        thumbnail: "/thumbnails/1zwhuM5bHW2ZUv4NMfYdOtQiBEwCLiBC6.jpg"
       },
       {
         name: "CLOSE STEP",
         description: "Step R (L) foot in fourth in front (ct. 1) close L (R) to R (L) foot in third in rear or in first position (ct. 1). This may be executed in any direction.",
-        video: "/vid/close step.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1BoaG0AeNQqKn5IpDYyhGmsIozxfACwVv",
+        thumbnail: "/thumbnails/1BoaG0AeNQqKn5IpDYyhGmsIozxfACwVv.jpg"
       },
       {
         name: "SWAY BALANCE WITH A POINT",
         description: "step R(L) obliquely forward right (cts. 1,2) cross step L(R ) across the R(L) foot (ct. 3), step R(L) obliquely backward R(L) (ct. 1). Point L(R) in fourth in front (cts. 2, 3)",
-        video: "/vid/sway balance w_ point.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1KW_4__BaA8Fq43kztu4gR7V_yHhUy4M6",
+        thumbnail: "/thumbnails/1KW_4__BaA8Fq43kztu4gR7V_yHhUy4M6.jpg"
       },
       {
         name: "WALKING STEP",
         description: "Step R (L) foot forward (ct. 1), step L(R) foot (ct. 2).",
-        video: "/vid/walking step.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ",
+        thumbnail: "/thumbnails/1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ.jpg"
       },
       {
         name: "WALTZ STEP",
         description: "step R (L) foot in place R (ct.1), close L ( R ) to R(L) (ct.2)Step R (L) in place (ct. 3).",
-        video: "/vid/waltz turn.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+        thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
       },
       {
         name: "WALTZ TURN",
         description: "Same step as in waltz step but turning in place or moving.",
-        video: "/vid/waltz turn.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+        thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
       },
     ],
     contact: {
       name: "Dr. Arnel P. Plantado",
       facebook: "https://www.facebook.com/arnel.plantado",
-      description: "Archival specialist for Bulakenya traditions. Contact for detailed step-by-step instructional videos and handkerchief technique demonstrations.",
+      description: "For the complete performance footage and high-quality archival videos of this dance, please coordinate with our official cultural documentation partner.",
       picture: "/sirPlantado.jpg"
     }
   },
@@ -594,7 +619,7 @@ export const DANCES = [
     properties: {
       costume: {
         female: "Patadyong and blouses or Kimonas",
-        male: "Working costume — rolled sleeves, colored trousers",
+        male: "Working costume - rolled sleeves, colored trousers",
       },
       accessories: ["Large handkerchief or clothing (Female head dress)", "Pouch for gold nuggets", "Shallow basin or pan (wood or zinc)", "Buri hat (Male head dress)", "Two pieces of big flat stones"],
       footwearFemale: "Barefoot",
@@ -611,58 +636,68 @@ export const DANCES = [
       {
         name: "SEMI-SQUAT POSITION",
         description: "Dancers sit in a semi-squat position facing the audience, ready for work.",
-        video: "/vid/semi squat.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1ObLlSBXly911sm5wG2FsyS7W1xCkrsep",
+        thumbnail: "/thumbnails/1ObLlSBXly911sm5wG2FsyS7W1xCkrsep.jpg"
       },
       {
         name: "STONE PLACEMENT",
         description: "The motion of taking particles of rock and placing them onto a big stone using both hands.",
-        video: "/vid/stone placement.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1LzTmAddLpCpvl8CjcQdCeuWW2J6BCGVg",
+        thumbnail: "/thumbnails/1LzTmAddLpCpvl8CjcQdCeuWW2J6BCGVg.jpg"
       },
       {
         name: "RIGHT-HAND LEAD & CRUSHING/POUNDING",
         description: "Specifically taking a second stone with the R hand to prepare for the crushing motion. Using one stone to pound on another on the first and third beats of every measure to crush rock.",
-        video: "/vid/crushing_pounding.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1m3_cDthbHWYB0D6hOIzunNRHxXo8Gu7i",
+        thumbnail: "/thumbnails/1m3_cDthbHWYB0D6hOIzunNRHxXo8Gu7i.jpg"
       },
       {
         name: "HAND-TO-HAND TRANSFER & RUBBING (PULVERIZING)",
         description: "The motion of taking a handful of crushed rock with the R hand and putting it on top of a stone held by the L hand. Picking up a second stone and rubbing two stones together in a circular or back-and-forth motion to pulverize the rock.",
-        video: "/vid/hand to hand transfer_rubbing.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1Y7HgLsk0l8aoOyxylthb-a_PtFYV2nn2",
+        thumbnail: "/thumbnails/1Y7HgLsk0l8aoOyxylthb-a_PtFYV2nn2.jpg"
       },
       {
         name: "PAN ROTATION",
         description: "Holding the pan with both hands and rotating it clockwise or counter-clockwise.",
-        video: "/vid/pan rotation.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1rFnr4oWFrC9DSW87Ebq35mVSkR9KECfG",
+        thumbnail: "/thumbnails/1rFnr4oWFrC9DSW87Ebq35mVSkR9KECfG.jpg"
       },
       {
         name: "WINNOWING",
         description: "A specific lateral or circular shaking motion of the pan used to separate earth and sand from impurities, similar to winnowing rice.",
-        video: "/vid/winnowing.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1S2p-F9EnW_zxKOit3Uy_3PtnQdJ3A-lp",
+        thumbnail: "/thumbnails/1S2p-F9EnW_zxKOit3Uy_3PtnQdJ3A-lp.jpg"
       },
       {
         name: "NUGGET PICKING & EXAMINATION POSE",
         description: "The motion of picking up nuggets from the pan using the R hand (counts 1, 2, 3). Holding the nugget up at the right side, then the left side, to inspect it (3M).",
-        video: "/vid/nugget picking_exam pose.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1jbyPl1-saezWe-SIE_i4u_xFehbr5mQ3",
+        thumbnail: "/thumbnails/1jbyPl1-saezWe-SIE_i4u_xFehbr5mQ3.jpg"
       },
       {
         name: "BAGGING",
         description: "Taking the found nuggets or stones and putting them into a bag or pan on the final measure.",
-        video: "/vid/bagging.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1PlpuUePkz-FO9FFD88VNajfjg3M2okcH",
+        thumbnail: "/thumbnails/1PlpuUePkz-FO9FFD88VNajfjg3M2okcH.jpg"
       },
       {
         name: "REVEALING THE FIND",
         description: "Picking up an imaginary nugget and showing it to a partner with a joyful expression (as if saying 'Really found gold!').",
-        video: "/vid/revealing the find.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1z5TwIkmibKTObnnWIxBHWmulcZQXs4NA",
+        thumbnail: "/thumbnails/1z5TwIkmibKTObnnWIxBHWmulcZQXs4NA.jpg"
       },
       {
         name: "PARTNER INTERACTION",
         description: "Facing each other while performing the found gold sequence.",
-        video: "/vid/partner interaction.MOV"
+        video: "https://drive.google.com/uc?export=download&id=18H1QCzamnyS2GqG-KSre0HoLOK1svQ-s",
+        thumbnail: "/thumbnails/18H1QCzamnyS2GqG-KSre0HoLOK1svQ-s.jpg"
       },
     ],
     contact: {
       name: "Dr. Arnel P. Plantado",
       facebook: "https://www.facebook.com/arnel.plantado",
-      description: "Expert in occupational dances of Paracale. Reach out for full performance videos and authentic panning movement demonstrations.",
+      description: "For the complete performance footage and high-quality archival videos of this dance, please coordinate with our official cultural documentation partner.",
       picture: "/sirPlantado.jpg"
     }
   },
@@ -721,43 +756,50 @@ export const DANCES = [
       {
         name: "LIGHT WALKING STEP & LIGHTED TORCH HOLD",
         description: "Entering cautiously and moving in any direction while trying to remain silent. Holding a torch in the L hand and a bamboo pole in the R hand while investigating the area.",
-        video: "/vid/light walking step.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1ItI1Rs5d-bg91Pd1jCAhXTnlVCOCv7Zc",
+        thumbnail: "/thumbnails/1ItI1Rs5d-bg91Pd1jCAhXTnlVCOCv7Zc.jpg"
       },
       {
         name: "FEIGNING IMPACT",
         description: "The motion of accidentally hitting a beehive with the bamboo pole.",
-        video: "/vid/feigning impact.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1RMDgvpLbszvOr1LVXZ_0nuUdeIQfPW2h",
+        thumbnail: "/thumbnails/1RMDgvpLbszvOr1LVXZ_0nuUdeIQfPW2h.jpg"
       },
       {
         name: "BEE EVASION",
         description: "Running around while bending the trunk, stamping feet, and squatting to avoid imaginary bees.",
-        video: "/vid/bee invasion.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1qE7Zen9Ogave9AqNUDzpKKLG7mdp4Hgm",
+        thumbnail: "/thumbnails/1qE7Zen9Ogave9AqNUDzpKKLG7mdp4Hgm.jpg"
       },
       {
         name: "BEE BATTLE",
         description: "Driving away bees by swinging the L and R hands alternately or both hands together.",
-        video: "/vid/bee battle.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1xQJFlENaIDeZ1WZiLMslYBnz7nJpAWMn",
+        thumbnail: "/thumbnails/1xQJFlENaIDeZ1WZiLMslYBnz7nJpAWMn.jpg"
       },
       {
         name: "EXCRUCIATING PAIN ACTION",
         description: "Scratching various body parts (head, back, neck, nose, etc.) and jumping high in the air as if suffering from stings.",
-        video: "/vid/excruciating pain.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1bORq3yYBZ3WBF_rN8lpRzSB_c0pg_2oc",
+        thumbnail: "/thumbnails/1bORq3yYBZ3WBF_rN8lpRzSB_c0pg_2oc.jpg"
       },
       {
         name: "ROLLING STUNT",
         description: "Rolling on the floor to avoid further bites.",
-        video: "/vid/rolling stunt.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1PlzOXPUxomUUSJAFOwdsW1obJn27Zgbe",
+        thumbnail: "/thumbnails/1PlzOXPUxomUUSJAFOwdsW1obJn27Zgbe.jpg"
       },
       {
         name: "EXHAUSTION POSE",
         description: "Ending the dance by scratching the head, looking tired, and appearing in pain.",
-        video: "/vid/exhaustion pose.MOV"
+        video: "https://drive.google.com/uc?export=download&id=1nFyidbeG0Y3JQ-_rZ81Lz_iR6sLscRY3",
+        thumbnail: "/thumbnails/1nFyidbeG0Y3JQ-_rZ81Lz_iR6sLscRY3.jpg"
       },
     ],
     contact: {
       name: "Dr. Arnel P. Plantado",
       facebook: "https://www.facebook.com/arnel.plantado",
-      description: "Specialist in upland and comic dances of Basud. Contact for authentic honey-gatherer movement coaching and full performance footage.",
+      description: "For the complete performance footage and high-quality archival videos of this dance, please coordinate with our official cultural documentation partner.",
       picture: "/sirPlantado.jpg"
     }
   },
