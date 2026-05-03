@@ -818,7 +818,7 @@ export default function DanceDetail() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="relative w-full max-w-6xl bg-background border border-white/10 overflow-hidden shadow-2xl flex flex-col md:flex-row h-full max-h-[85vh]"
+            className="relative w-full max-w-6xl bg-background border border-white/10 overflow-hidden shadow-2xl flex flex-col md:flex-row h-full max-h-[85vh] gap-6 md:gap-0"
           >
             <button
               onClick={() => setIsStepModalOpen(false)}
@@ -828,7 +828,7 @@ export default function DanceDetail() {
             </button>
 
             {/* Video Side */}
-            <div className="md:w-[65%] bg-black flex items-center justify-center relative group">
+            <div className="w-full shrink-0 aspect-[16/10] md:aspect-auto md:w-[65%] md:h-full bg-black flex items-center justify-center relative group">
                 {/* Navigation Arrows */}
                 <button 
                   onClick={handlePrevStep}
@@ -849,7 +849,7 @@ export default function DanceDetail() {
                   <video
                     src={activeStep.video}
                     autoPlay
-                    muted
+                    muted={true}
                     loop
                     playsInline
                     className="w-full h-full object-contain pointer-events-none"
@@ -857,7 +857,7 @@ export default function DanceDetail() {
                       const container = e.currentTarget.parentElement;
                       if (container) {
                         const id = activeStep.video.split('id=')[1]?.split('&')[0];
-                        container.innerHTML = `<iframe src="https://drive.google.com/file/d/${id}/preview?mute=1" class="w-full h-full border-0" allow="autoplay" allowFullScreen></iframe>`;
+                        container.innerHTML = `<iframe src="https://drive.google.com/file/d/${id}/preview?mute=1&autoplay=1" class="w-full h-full border-0" allow="autoplay" allowFullScreen></iframe>`;
                       }
                     }}
                   />
@@ -865,7 +865,7 @@ export default function DanceDetail() {
             </div>
 
             {/* Info Side */}
-            <div className="md:w-[35%] p-10 md:p-12 overflow-y-auto flex flex-col">
+            <div className="w-full md:w-[35%] p-6 md:p-12 overflow-y-auto flex flex-col flex-1">
               <p className="text-sm uppercase tracking-[0.3em] text-accent font-sans font-bold mb-6">Fundamental Step</p>
               <h2 className="font-serif text-4xl lg:text-5xl text-foreground mb-8 leading-tight">{activeStep.name}</h2>
 
