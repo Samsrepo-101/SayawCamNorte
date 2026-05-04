@@ -102,19 +102,19 @@ export const DANCES = [
         {
           name: "Cross step",
           description: "Step R (L) foot on second position (ct. 1), step or slide L (R) foot sideward right (left) across the R(L) in front (cts.2,3). Put the weigh on the L(R) foot at end of the slide in the third count. This is done in series, moving to one direction, to sideward right or left.",
-          video: "https://drive.google.com/uc?export=download&id=1EGEBZP3_lFBDQc2t5wUxBv_3FWT4dIHV",
+          video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882365/cross_step_hlvb95.mov",
         thumbnail: "/thumbnails/1EGEBZP3_lFBDQc2t5wUxBv_3FWT4dIHV.jpg"
         },
         {
           name: "DO-SI-DO- (Dos-A Dos)",
           description: "The vis-à-vis (opposite) both a advance forward, pass each other's right ( or left) more backward without turning around pass each other's left (or right) side to proper places. This is foreign origin and is used in many Philippine dances.",
-          video: "https://drive.google.com/uc?export=download&id=1yyQglHeKpiqdL1tdUep-2GJG7gcf7Bks",
+          video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882220/dosido_tyfvex.mov",
         thumbnail: "/thumbnails/1yyQglHeKpiqdL1tdUep-2GJG7gcf7Bks.jpg"
         },
         {
           name: "MAZURKA",
           description: "Slide (L) foot in second (ct. 1), cut R (L) sideward with the L (R) foot (ct. 2), hop on the L (R) foot and of the L (R) foot (ct. 3). This step may be executed forward, obliquely forward, sideward or going around also with one foot leading.",
-          video: "https://drive.google.com/uc?export=download&id=10wlLKfwOqF90tfSyE_Bb6fQTFx4V0IJW",
+          video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882429/mazurka_hn10z2.mov",
         thumbnail: "/thumbnails/10wlLKfwOqF90tfSyE_Bb6fQTFx4V0IJW.jpg"
         },
         {
@@ -125,19 +125,19 @@ export const DANCES = [
         {
           name: "WALKING STEP",
           description: "Step R (L) foot forward (ct. 1), step L(R) foot (ct. 2).",
-          video: "https://drive.google.com/uc?export=download&id=1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ",
+          video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882727/walking_step_svbzvm.mov",
         thumbnail: "/thumbnails/1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ.jpg"
         },
         {
           name: "SWAY BALANCE WITH A RAISE",
           description: "a. Step R (L) foot obliquely forward right (left) (cts. 1, 2), step L(R) across the R (L) foot in front ct. 3 .............................. 1M\n\nb. Step R (L) foot obliquely backward right (left) (ct. 1), raise L(R) Knee in front (cts. 2,3) Bend body slightly forward on ct. 1, and raise gradually upward to original position as (cts. 2,3). Open arms sideward at shoulder level on the first then counts (cts. 1,2,3), bend forearms forward and bring hands close to chest on the next three counts (cts. 1,2,3), or arms in fourth position R (L) arm high. If desired, forearm turns may be done on the second measure.",
-          video: "https://drive.google.com/uc?export=download&id=1yVcrxuolQejqcOiopcVlQ-oQUADpg7nc",
+          video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882672/sway_balance_w__raise_x1xzfb.mov",
         thumbnail: "/thumbnails/1yVcrxuolQejqcOiopcVlQ-oQUADpg7nc.jpg"
         },
         {
           name: "WALTZ TURN",
           description: "Same step as in waltz step but turning in place or moving.",
-          video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+          video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882756/waltz_turn_pebz4p.mov",
         thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
         },
       ],
@@ -282,79 +282,79 @@ export const DANCES = [
       {
         name: "RUNNING STEP",
         description: "Used in the Introduction to meet at the center (8 steps).",
-        video: "https://drive.google.com/uc?export=download&id=1aR6rZum1w6XaFlQOV2KHCSK658m8ZpK8",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882594/running_step_cdvdx7.mov",
         thumbnail: "/thumbnails/1aR6rZum1w6XaFlQOV2KHCSK658m8ZpK8.jpg"
       },
       {
         name: "WALKING STEP",
         description: "Partners take four steps forward and backward while manipulating the skirt or placing hands at the waist.",
-        video: "https://drive.google.com/uc?export=download&id=1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882727/walking_step_svbzvm.mov",
         thumbnail: "/thumbnails/1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ.jpg"
       },
       {
         name: "CHANGE STEP",
         description: "Executed alternately (R and L) while moving forward or in place (counts: 1, and, 2).",
-        video: "https://drive.google.com/uc?export=download&id=1amJEJaX4VosePEs1AQGpxO12_fEMUcAu",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777881940/change_step_jalkan.mov",
         thumbnail: "/thumbnails/1amJEJaX4VosePEs1AQGpxO12_fEMUcAu.jpg"
       },
       {
         name: "CLOCKWISE CIRCLE",
         description: "Partners move toward each other, pause, then retreat - symbolizing the approach and blessing of marriage.",
-        video: "https://drive.google.com/uc?export=download&id=17JZZTpzHhxtuTMMNLzFrc5N9-HCBBXif",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882098/clockwise_circle_dusnoh.mov",
         thumbnail: "/thumbnails/17JZZTpzHhxtuTMMNLzFrc5N9-HCBBXif.jpg"
       },
       {
         name: "ENGAÑO WITH A WALTZ",
         description: "A combination step involving a side-step and a waltz step, performed with a forearm turn in reverse T-position.",
-        video: "https://drive.google.com/uc?export=download&id=16x4ErkA4LvNmP4HeA8AulmdhNJxE140x",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882274/egano_w__a_waltz_nthno8.mov",
         thumbnail: "/thumbnails/16x4ErkA4LvNmP4HeA8AulmdhNJxE140x.jpg"
       },
       {
         name: "WALTZ TURN",
         description: "Moderate turns executed in place to face the partner after passing.",
-        video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882756/waltz_turn_pebz4p.mov",
         thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
       },
       {
         name: "LATERAL ARMS",
         description: "Arms held to one side (shoulder/waist level) during the waltz transitions.",
-        video: "https://drive.google.com/uc?export=download&id=1wmzsqeWQJ2Jaej-gQGXCXcJfsF2HhL3B",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882075/arms_in_lateral_position_czl8pi.mov",
         thumbnail: "/thumbnails/1wmzsqeWQJ2Jaej-gQGXCXcJfsF2HhL3B.jpg"
       },
       {
         name: "STEP-SWING STEP",
         description: "A rhythmic step where one foot steps and the other swings across; used to meet at the center and move forward while joined.",
-        video: "https://drive.google.com/uc?export=download&id=1JT_hA4NiVd4Sswu2qH84n7iHnqAKBSaT",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882621/step_swing_oelupl.mov",
         thumbnail: "/thumbnails/1JT_hA4NiVd4Sswu2qH84n7iHnqAKBSaT.jpg"
       },
       {
         name: "SWING TURN",
         description: "A six-step sequence used to turn left while maintaining the step-swing rhythm.",
-        video: "https://drive.google.com/uc?export=download&id=1d4AvFsbrSKvH5LNOxhfBdHNaNmzzGzD2",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882711/swing_turn_gvzxvp.mov",
         thumbnail: "/thumbnails/1d4AvFsbrSKvH5LNOxhfBdHNaNmzzGzD2.jpg"
       },
       {
         name: "KNEELING",
         description: "A graceful drop to one knee (R or L) used specifically by the Boy while following or pleading.",
-        video: "https://drive.google.com/uc?export=download&id=1Sn2z2hluqK45er9VnjDEeYWR518V3Len",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882365/kneeling_i6drzz.mov",
         thumbnail: "/thumbnails/1Sn2z2hluqK45er9VnjDEeYWR518V3Len.jpg"
       },
       {
         name: "LEAP STEP",
         description: "A light, springing step used by the Girl to evade the Boy at the corners of the diamond.",
-        video: "https://drive.google.com/uc?export=download&id=1DvXeGMjBdSEvexmTmsJKPv2Ma5lwpEd5",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882392/leap_step_yvofjo.mov",
         thumbnail: "/thumbnails/1DvXeGMjBdSEvexmTmsJKPv2Ma5lwpEd5.jpg"
       },
       {
         name: "SALOK",
         description: "A scooping arm movement where the Boy bends toward the Girl's ankle with the L hand.",
-        video: "https://drive.google.com/uc?export=download&id=1SzeT3SXoh1RQp3Ow3WOhV2RLDBxqZIog",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882755/salok_abzcxl.mov",
         thumbnail: "/thumbnails/1SzeT3SXoh1RQp3Ow3WOhV2RLDBxqZIog.jpg"
       },
       {
         name: "ARCH TURN",
         description: "The Girl executes a final turn under the arch created by the Boy's arm.",
-        video: "https://drive.google.com/uc?export=download&id=1qNcACv-5bMHuuVtAJMVvN4X_iD790kDc",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777881932/arch_turn_gepnnn.mov",
         thumbnail: "/thumbnails/1qNcACv-5bMHuuVtAJMVvN4X_iD790kDc.jpg"
       },
     ],
@@ -485,37 +485,37 @@ export const DANCES = [
       {
         name: "CHASING STEP",
         description: "Step R(L) forward, (ct.1), step L close to R(L) in third in rear or first position (ct. and) this step as executed, with one foot leading in all directions. The steps are small. There are two chasing steps in a measure.",
-        video: "https://drive.google.com/uc?export=download&id=1zwhuM5bHW2ZUv4NMfYdOtQiBEwCLiBC6",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882016/chasing_step_q0yjp8.mov",
         thumbnail: "/thumbnails/1zwhuM5bHW2ZUv4NMfYdOtQiBEwCLiBC6.jpg"
       },
       {
         name: "CLOSE STEP",
         description: "Step R (L) foot in fourth in front (ct. 1) close L (R) to R (L) foot in third in rear or in first position (ct. 1). This may be executed in any direction.",
-        video: "https://drive.google.com/uc?export=download&id=1BoaG0AeNQqKn5IpDYyhGmsIozxfACwVv",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882141/close_step_cpldap.mov",
         thumbnail: "/thumbnails/1BoaG0AeNQqKn5IpDYyhGmsIozxfACwVv.jpg"
       },
       {
         name: "SWAY BALANCE WITH A POINT",
         description: "step R(L) obliquely forward right (cts. 1,2) cross step L(R ) across the R(L) foot (ct. 3), step R(L) obliquely backward R(L) (ct. 1). Point L(R) in fourth in front (cts. 2, 3)",
-        video: "https://drive.google.com/uc?export=download&id=1KW_4__BaA8Fq43kztu4gR7V_yHhUy4M6",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882644/sway_balance_w__point_na5gr9.mov",
         thumbnail: "/thumbnails/1KW_4__BaA8Fq43kztu4gR7V_yHhUy4M6.jpg"
       },
       {
         name: "WALKING STEP",
         description: "Step R (L) foot forward (ct. 1), step L(R) foot (ct. 2).",
-        video: "https://drive.google.com/uc?export=download&id=1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882727/walking_step_svbzvm.mov",
         thumbnail: "/thumbnails/1u0K8TYqWxHfxXM8LiSrl4-eBVrBP8eVQ.jpg"
       },
       {
         name: "WALTZ STEP",
         description: "step R (L) foot in place R (ct.1), close L ( R ) to R(L) (ct.2)Step R (L) in place (ct. 3).",
-        video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882756/waltz_turn_pebz4p.mov",
         thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
       },
       {
         name: "WALTZ TURN",
         description: "Same step as in waltz step but turning in place or moving.",
-        video: "https://drive.google.com/uc?export=download&id=1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882756/waltz_turn_pebz4p.mov",
         thumbnail: "/thumbnails/1qoEoKTHvp0L-F5sCE7XW4v4W5WuJIlUh.jpg"
       },
     ],
@@ -636,61 +636,61 @@ export const DANCES = [
       {
         name: "SEMI-SQUAT POSITION",
         description: "Dancers sit in a semi-squat position facing the audience, ready for work.",
-        video: "https://drive.google.com/uc?export=download&id=1ObLlSBXly911sm5wG2FsyS7W1xCkrsep",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882590/semi_squat_mitc98.mov",
         thumbnail: "/thumbnails/1ObLlSBXly911sm5wG2FsyS7W1xCkrsep.jpg"
       },
       {
         name: "STONE PLACEMENT",
         description: "The motion of taking particles of rock and placing them onto a big stone using both hands.",
-        video: "https://drive.google.com/uc?export=download&id=1LzTmAddLpCpvl8CjcQdCeuWW2J6BCGVg",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882811/stone_placement_yz321a.mov",
         thumbnail: "/thumbnails/1LzTmAddLpCpvl8CjcQdCeuWW2J6BCGVg.jpg"
       },
       {
         name: "RIGHT-HAND LEAD & CRUSHING/POUNDING",
         description: "Specifically taking a second stone with the R hand to prepare for the crushing motion. Using one stone to pound on another on the first and third beats of every measure to crush rock.",
-        video: "https://drive.google.com/uc?export=download&id=1m3_cDthbHWYB0D6hOIzunNRHxXo8Gu7i",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882197/crushing_pounding_yoxqtz.mov",
         thumbnail: "/thumbnails/1m3_cDthbHWYB0D6hOIzunNRHxXo8Gu7i.jpg"
       },
       {
         name: "HAND-TO-HAND TRANSFER & RUBBING (PULVERIZING)",
         description: "The motion of taking a handful of crushed rock with the R hand and putting it on top of a stone held by the L hand. Picking up a second stone and rubbing two stones together in a circular or back-and-forth motion to pulverize the rock.",
-        video: "https://drive.google.com/uc?export=download&id=1Y7HgLsk0l8aoOyxylthb-a_PtFYV2nn2",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882768/hand_to_hand_transfer_rubbing_xlebu9.mov",
         thumbnail: "/thumbnails/1Y7HgLsk0l8aoOyxylthb-a_PtFYV2nn2.jpg"
       },
       {
         name: "PAN ROTATION",
         description: "Holding the pan with both hands and rotating it clockwise or counter-clockwise.",
-        video: "https://drive.google.com/uc?export=download&id=1rFnr4oWFrC9DSW87Ebq35mVSkR9KECfG",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882508/pan_rotation_wyaq6g.mov",
         thumbnail: "/thumbnails/1rFnr4oWFrC9DSW87Ebq35mVSkR9KECfG.jpg"
       },
       {
         name: "WINNOWING",
         description: "A specific lateral or circular shaking motion of the pan used to separate earth and sand from impurities, similar to winnowing rice.",
-        video: "https://drive.google.com/uc?export=download&id=1S2p-F9EnW_zxKOit3Uy_3PtnQdJ3A-lp",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882774/winnowing_p1zwpn.mov",
         thumbnail: "/thumbnails/1S2p-F9EnW_zxKOit3Uy_3PtnQdJ3A-lp.jpg"
       },
       {
         name: "NUGGET PICKING & EXAMINATION POSE",
         description: "The motion of picking up nuggets from the pan using the R hand (counts 1, 2, 3). Holding the nugget up at the right side, then the left side, to inspect it (3M).",
-        video: "https://drive.google.com/uc?export=download&id=1jbyPl1-saezWe-SIE_i4u_xFehbr5mQ3",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882553/nugget_picking_exam_pose_elakku.mov",
         thumbnail: "/thumbnails/1jbyPl1-saezWe-SIE_i4u_xFehbr5mQ3.jpg"
       },
       {
         name: "BAGGING",
         description: "Taking the found nuggets or stones and putting them into a bag or pan on the final measure.",
-        video: "https://drive.google.com/uc?export=download&id=1PlpuUePkz-FO9FFD88VNajfjg3M2okcH",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882250/bagging_jgefjb.mov",
         thumbnail: "/thumbnails/1PlpuUePkz-FO9FFD88VNajfjg3M2okcH.jpg"
       },
       {
         name: "REVEALING THE FIND",
         description: "Picking up an imaginary nugget and showing it to a partner with a joyful expression (as if saying 'Really found gold!').",
-        video: "https://drive.google.com/uc?export=download&id=1z5TwIkmibKTObnnWIxBHWmulcZQXs4NA",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882577/revealing_the_find_zio1c0.mov",
         thumbnail: "/thumbnails/1z5TwIkmibKTObnnWIxBHWmulcZQXs4NA.jpg"
       },
       {
         name: "PARTNER INTERACTION",
         description: "Facing each other while performing the found gold sequence.",
-        video: "https://drive.google.com/uc?export=download&id=18H1QCzamnyS2GqG-KSre0HoLOK1svQ-s",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882497/partner_interaction_g0lzbr.mov",
         thumbnail: "/thumbnails/18H1QCzamnyS2GqG-KSre0HoLOK1svQ-s.jpg"
       },
     ],
@@ -756,43 +756,43 @@ export const DANCES = [
       {
         name: "LIGHT WALKING STEP & LIGHTED TORCH HOLD",
         description: "Entering cautiously and moving in any direction while trying to remain silent. Holding a torch in the L hand and a bamboo pole in the R hand while investigating the area.",
-        video: "https://drive.google.com/uc?export=download&id=1ItI1Rs5d-bg91Pd1jCAhXTnlVCOCv7Zc",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882799/light_walking_step_l6sqtg.mov",
         thumbnail: "/thumbnails/1ItI1Rs5d-bg91Pd1jCAhXTnlVCOCv7Zc.jpg"
       },
       {
         name: "FEIGNING IMPACT",
         description: "The motion of accidentally hitting a beehive with the bamboo pole.",
-        video: "https://drive.google.com/uc?export=download&id=1RMDgvpLbszvOr1LVXZ_0nuUdeIQfPW2h",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882416/feigning_impact_upnxoj.mov",
         thumbnail: "/thumbnails/1RMDgvpLbszvOr1LVXZ_0nuUdeIQfPW2h.jpg"
       },
       {
         name: "BEE EVASION",
         description: "Running around while bending the trunk, stamping feet, and squatting to avoid imaginary bees.",
-        video: "https://drive.google.com/uc?export=download&id=1qE7Zen9Ogave9AqNUDzpKKLG7mdp4Hgm",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882788/bee_invasion_w0quak.mov",
         thumbnail: "/thumbnails/1qE7Zen9Ogave9AqNUDzpKKLG7mdp4Hgm.jpg"
       },
       {
         name: "BEE BATTLE",
         description: "Driving away bees by swinging the L and R hands alternately or both hands together.",
-        video: "https://drive.google.com/uc?export=download&id=1xQJFlENaIDeZ1WZiLMslYBnz7nJpAWMn",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882776/bee_battle_c1jzed.mov",
         thumbnail: "/thumbnails/1xQJFlENaIDeZ1WZiLMslYBnz7nJpAWMn.jpg"
       },
       {
         name: "EXCRUCIATING PAIN ACTION",
         description: "Scratching various body parts (head, back, neck, nose, etc.) and jumping high in the air as if suffering from stings.",
-        video: "https://drive.google.com/uc?export=download&id=1bORq3yYBZ3WBF_rN8lpRzSB_c0pg_2oc",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882329/excruciating_pain_vt8fwu.mov",
         thumbnail: "/thumbnails/1bORq3yYBZ3WBF_rN8lpRzSB_c0pg_2oc.jpg"
       },
       {
         name: "ROLLING STUNT",
         description: "Rolling on the floor to avoid further bites.",
-        video: "https://drive.google.com/uc?export=download&id=1PlzOXPUxomUUSJAFOwdsW1obJn27Zgbe",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882765/rolling_stunt_m6wts1.mov",
         thumbnail: "/thumbnails/1PlzOXPUxomUUSJAFOwdsW1obJn27Zgbe.jpg"
       },
       {
         name: "EXHAUSTION POSE",
         description: "Ending the dance by scratching the head, looking tired, and appearing in pain.",
-        video: "https://drive.google.com/uc?export=download&id=1nFyidbeG0Y3JQ-_rZ81Lz_iR6sLscRY3",
+        video: "https://res.cloudinary.com/ddyu3yrpt/video/upload/q_auto/f_mp4/vc_auto/v1777882791/exhaustion_pose_yb0xap.mov",
         thumbnail: "/thumbnails/1nFyidbeG0Y3JQ-_rZ81Lz_iR6sLscRY3.jpg"
       },
     ],

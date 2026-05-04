@@ -517,15 +517,9 @@ export default function DanceDetail() {
                       {step.video ? (
                         <>
                           <img
-                            src={step.thumbnail || (step.video.includes('id=') ? `https://lh3.googleusercontent.com/d/${step.video.split('id=')[1].split('&')[0]}=w1000` : step.video)}
+                            src={step.thumbnail || dance.image}
                             alt={step.name}
                             className="w-full h-full object-cover transition-transform duration-700 group-hover/step:scale-105"
-                            onError={(e) => {
-                              if (!e.currentTarget.dataset.retried && step.video.includes('id=')) {
-                                e.currentTarget.dataset.retried = "true";
-                                e.currentTarget.src = `https://drive.google.com/thumbnail?id=${step.video.split('id=')[1].split('&')[0]}&sz=w1000`;
-                              }
-                            }}
                           />
                           <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover/step:opacity-100 transition-opacity flex items-center justify-center">
                             <div className="w-16 h-16 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-2xl transform scale-75 group-hover/step:scale-100 transition-transform duration-500">
@@ -849,17 +843,10 @@ export default function DanceDetail() {
                   <video
                     src={activeStep.video}
                     autoPlay
-                    muted={true}
+                    muted
                     loop
                     playsInline
                     className="w-full h-full object-contain pointer-events-none"
-                    onError={(e) => {
-                      const container = e.currentTarget.parentElement;
-                      if (container) {
-                        const id = activeStep.video.split('id=')[1]?.split('&')[0];
-                        container.innerHTML = `<iframe src="https://drive.google.com/file/d/${id}/preview?mute=1&autoplay=1" class="w-full h-full border-0" allow="autoplay" allowFullScreen></iframe>`;
-                      }
-                    }}
                   />
                 </div>
             </div>
