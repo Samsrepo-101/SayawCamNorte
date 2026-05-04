@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParams, Link, Navigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Play, MapPin, User, BookOpen, Users, Music, Shirt, Footprints, ImageIcon, Eye, Video, FileAudio, ShoppingCart, X, MessageSquare, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Play, MapPin, User, BookOpen, Users, Music, Shirt, Footprints, ImageIcon, Eye, Video, FileAudio, ShoppingCart, X, MessageSquare, ExternalLink, ChevronLeft, ChevronRight, Maximize2, Minimize2 } from "lucide-react";
 import { getDanceBySlug, DANCES, DANCE_SUBTABS } from "@/lib/dances";
 
 export default function DanceDetail() {
@@ -13,6 +13,8 @@ export default function DanceDetail() {
   const [currentNotePieceIndex, setCurrentNotePieceIndex] = useState(0);
   const [activeStep, setActiveStep] = useState(null);
   const [isStepModalOpen, setIsStepModalOpen] = useState(false);
+  const [isStepVideoFullscreen, setIsStepVideoFullscreen] = useState(false);
+  const stepVideoContainerRef = useRef(null);
 
   const openModal = (index = 0) => {
     setCurrentNotePieceIndex(index);
@@ -69,6 +71,43 @@ export default function DanceDetail() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isStepModalOpen, activeStep]);
 
+  useEffect(() => {
+    const syncFullscreenState = () => {
+      setIsStepVideoFullscreen(!!document.fullscreenElement);
+    };
+
+    document.addEventListener("fullscreenchange", syncFullscreenState);
+    return () => document.removeEventListener("fullscreenchange", syncFullscreenState);
+  }, []);
+
+  const handleToggleStepVideoFullscreen = async (e) => {
+    e?.stopPropagation();
+
+    const container = stepVideoContainerRef.current;
+    if (!container) return;
+
+    const requestFullscreen =
+      container.requestFullscreen ||
+      container.webkitRequestFullscreen ||
+      container.msRequestFullscreen;
+    const exitFullscreen =
+      document.exitFullscreen ||
+      document.webkitExitFullscreen ||
+      document.msExitFullscreen;
+
+    try {
+      if (document.fullscreenElement) {
+        if (exitFullscreen) {
+          await exitFullscreen.call(document);
+        }
+      } else if (requestFullscreen) {
+        await requestFullscreen.call(container);
+      }
+    } catch {
+      // Fail silently if fullscreen is blocked by browser/device.
+    }
+  };
+
   const TAB_ICONS = {
     "overview": Eye,
     "background": BookOpen,
@@ -108,7 +147,7 @@ export default function DanceDetail() {
   };
 
   return (
-    <article className="bg-background">
+    <article className="bg-background w-full max-w-full overflow-x-hidden">
 
       {/* ── HERO ── */}
       <section id="overview" className="relative min-h-[92vh] flex items-end overflow-hidden">
@@ -124,7 +163,7 @@ export default function DanceDetail() {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-background/60" />
         </div>
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 pt-40 pb-16">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-32 md:pt-40 pb-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -139,7 +178,7 @@ export default function DanceDetail() {
             <p className="font-serif italic text-accent text-base md:text-lg tracking-[0.3em] uppercase mb-4">
               {dance.classification}
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] text-balance max-w-4xl">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[0.95] text-balance max-w-4xl">
               {dance.name}
             </h1>
             <p className="mt-8 font-display italic text-2xl md:text-3xl text-foreground/85 max-w-2xl leading-relaxed">
@@ -165,7 +204,7 @@ export default function DanceDetail() {
 
       {/* ── STICKY SUB-NAV ── */}
       <div className="sticky top-16 z-40 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 overflow-x-auto hide-scrollbar">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 overflow-x-auto hide-scrollbar">
           <div className="flex gap-1 min-w-max py-1">
             {DANCE_SUBTABS.map((tab) => {
               const Icon = TAB_ICONS[tab.id];
@@ -200,7 +239,7 @@ export default function DanceDetail() {
 
       {/* ── BACKGROUND & CONTEXT ── */}
       <section id="background" className="py-28 md:py-36 bg-secondary/10 scroll-mt-32">
-        <div className="max-w-4xl mx-auto px-6 lg:px-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -210,7 +249,7 @@ export default function DanceDetail() {
             <p className="text-sm uppercase tracking-[0.35em] text-accent mb-6 font-sans">
               Background & Context
             </p>
-            <p className="font-serif text-2xl md:text-3xl lg:text-4xl leading-relaxed text-foreground/90 first-letter:font-display first-letter:text-7xl first-letter:float-left first-letter:mr-4 first-letter:leading-none first-letter:text-primary first-letter:italic">
+            <p className="font-serif text-xl md:text-3xl lg:text-4xl leading-relaxed text-foreground/90 break-words first-letter:font-display first-letter:text-6xl md:first-letter:text-7xl first-letter:float-left first-letter:mr-4 first-letter:leading-none first-letter:text-primary first-letter:italic">
               {dance.description}
             </p>
             <p className="mt-10 text-xl md:text-2xl text-foreground/75 leading-relaxed font-display">
@@ -222,7 +261,7 @@ export default function DanceDetail() {
 
       {/* ── PERFORMERS & RESEARCHERS ── */}
       <section id="performers" className="py-24 md:py-32 bg-secondary/30 scroll-mt-32">
-        <div className="max-w-6xl mx-auto px-6 lg:px-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
           <p className="text-sm uppercase tracking-[0.35em] text-accent mb-10 font-sans">
             Performers & Researchers
           </p>
@@ -245,7 +284,7 @@ export default function DanceDetail() {
 
       {/* ── COSTUME & ACCESSORIES ── */}
       <section id="costume" className="py-28 md:py-36 bg-primary/5 scroll-mt-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           <p className="text-sm uppercase tracking-[0.35em] text-accent mb-12 font-sans text-center">
             Costume & Accessories
           </p>
@@ -361,7 +400,7 @@ export default function DanceDetail() {
 
       {/* ── MUSIC & COUNT ── */}
       <section id="music" className="py-24 md:py-32 bg-background scroll-mt-32 border-y border-border">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           <p className="text-sm uppercase tracking-[0.35em] text-accent mb-4 font-sans font-medium">
             Music & Count
           </p>
@@ -486,7 +525,7 @@ export default function DanceDetail() {
 
       {/* ── DANCE STEPS ── */}
       <section id="steps" className="py-24 md:py-32 bg-primary/5 scroll-mt-32">
-        <div className="max-w-6xl mx-auto px-6 lg:px-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
           <p className="text-sm uppercase tracking-[0.35em] text-accent mb-4 font-sans">
             Basic
           </p>
@@ -575,7 +614,7 @@ export default function DanceDetail() {
 
       {/* ── DANCE LITERATURE ── */}
       <section id="literature" className="py-28 md:py-36 scroll-mt-32 bg-background">
-        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10">
           <div className="text-center mb-24">
             <p className="text-sm uppercase tracking-[0.35em] text-accent mb-6 font-sans">
               Documentation
@@ -610,7 +649,7 @@ export default function DanceDetail() {
                       {lit.content.map((paragraph, pIdx) => (
                         <p
                           key={pIdx}
-                          className="font-serif text-xl md:text-2xl text-foreground/80 leading-relaxed border-l border-border pl-8"
+                          className="font-serif text-lg md:text-2xl text-foreground/80 leading-relaxed border-l border-border pl-5 md:pl-8 break-words"
                         >
                           {paragraph}
                         </p>
@@ -632,7 +671,7 @@ export default function DanceDetail() {
 
       {/* ── PERFORMANCE VIDEO INQUIRY ── */}
       <section id="video" className="py-28 md:py-40 bg-secondary/10 scroll-mt-32 border-t border-border">
-        <div className="max-w-6xl mx-auto px-6 lg:px-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
           <p className="text-sm uppercase tracking-[0.35em] text-accent mb-12 font-sans font-bold text-center">
             Performance Video
           </p>
@@ -706,7 +745,7 @@ export default function DanceDetail() {
 
       {/* ── NEXT / PREV NAVIGATION ── */}
       <section className="py-24 border-t border-border">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 gap-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid md:grid-cols-2 gap-10">
           <Link to={`/dance/${prev.slug}`} className="group">
             <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground mb-4 font-sans">
               <ArrowLeft className="w-4 h-4 inline mr-2" /> Previous Dance
@@ -812,7 +851,7 @@ export default function DanceDetail() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="relative w-full max-w-6xl bg-background border border-white/10 overflow-hidden shadow-2xl flex flex-col md:flex-row h-full max-h-[85vh] gap-6 md:gap-0"
+            className="relative w-full max-w-6xl bg-background border border-white/10 overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-5 h-full max-h-[85vh]"
           >
             <button
               onClick={() => setIsStepModalOpen(false)}
@@ -822,7 +861,8 @@ export default function DanceDetail() {
             </button>
 
             {/* Video Side */}
-            <div className="w-full shrink-0 aspect-[16/10] md:aspect-auto md:w-[65%] md:h-full bg-black flex items-center justify-center relative group">
+            <div className="w-full md:col-span-3 p-4 md:p-6 bg-black/90">
+              <div ref={stepVideoContainerRef} className="w-full aspect-video rounded-xl overflow-hidden bg-black flex items-center justify-center relative group">
                 {/* Navigation Arrows */}
                 <button 
                   onClick={handlePrevStep}
@@ -838,10 +878,21 @@ export default function DanceDetail() {
                 >
                   <ChevronRight className="w-8 h-8" />
                 </button>
+                <button
+                  onClick={handleToggleStepVideoFullscreen}
+                  className="absolute top-3 right-3 z-20 inline-flex items-center gap-2 px-3 py-2 bg-black/50 text-white rounded-md backdrop-blur-sm hover:bg-black/70 transition-colors"
+                  aria-label={isStepVideoFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+                >
+                  {isStepVideoFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+                  <span className="text-xs font-medium hidden sm:inline">
+                    {isStepVideoFullscreen ? "Exit Fullscreen" : "Fullscreen"}
+                  </span>
+                </button>
 
                 <div className="w-full h-full relative flex items-center justify-center" key={activeStep.video}>
                   <video
                     src={activeStep.video}
+                    poster={activeStep.thumbnail || dance.image}
                     autoPlay
                     muted
                     loop
@@ -849,16 +900,17 @@ export default function DanceDetail() {
                     className="w-full h-full object-contain pointer-events-none"
                   />
                 </div>
+              </div>
             </div>
 
             {/* Info Side */}
-            <div className="w-full md:w-[35%] p-6 md:p-12 overflow-y-auto flex flex-col flex-1">
+            <div className="w-full md:col-span-2 p-6 md:p-10 overflow-y-auto flex flex-col min-h-0">
               <p className="text-sm uppercase tracking-[0.3em] text-accent font-sans font-bold mb-6">Fundamental Step</p>
-              <h2 className="font-serif text-4xl lg:text-5xl text-foreground mb-8 leading-tight">{activeStep.name}</h2>
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-foreground mb-8 leading-tight break-words">{activeStep.name}</h2>
 
               <div className="w-16 h-1 bg-primary/20 mb-10" />
 
-              <p className="font-sans text-xl text-foreground/80 leading-relaxed whitespace-pre-line mb-10">
+              <p className="font-sans text-lg sm:text-xl text-foreground/80 leading-relaxed whitespace-pre-line mb-10 break-words">
                 {activeStep.description}
               </p>
 
